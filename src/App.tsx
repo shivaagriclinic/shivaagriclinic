@@ -11,6 +11,14 @@ import Products from "./pages/Products";
 import Solutions from "./pages/Solutions";
 import Blog from "./pages/Blog";
 import Gallery from "./pages/Gallery";
+import Team from "./pages/Team";
+import Careers from "./pages/Careers";
+import CaseStudies from "./pages/CaseStudies";
+import KnowledgeBase from "./pages/KnowledgeBase";
+import Videos from "./pages/Videos";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Terms from "./pages/Terms";
+import Sitemap from "./pages/Sitemap";
 import CropAdvisory from "./pages/services/CropAdvisory";
 import PestManagement from "./pages/services/PestManagement";
 import SoilTesting from "./pages/services/SoilTesting";
@@ -42,14 +50,14 @@ const App = () => (
           <Route path="/blog/*" element={<Blog />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/resources" element={<Blog />} />
-          <Route path="/team" element={<About />} />
-          <Route path="/careers" element={<About />} />
-          <Route path="/case-studies" element={<Blog />} />
-          <Route path="/knowledge-base" element={<Blog />} />
-          <Route path="/videos" element={<Blog />} />
-          <Route path="/privacy-policy" element={<About />} />
-          <Route path="/terms" element={<About />} />
-          <Route path="/sitemap" element={<About />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/case-studies" element={<CaseStudies />} />
+          <Route path="/knowledge-base" element={<KnowledgeBase />} />
+          <Route path="/videos" element={<Videos />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/sitemap" element={<Sitemap />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
