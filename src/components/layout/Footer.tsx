@@ -187,6 +187,11 @@ export const Footer = () => {
               </Link>
             </div>
           </div>
+          <div className="text-center mt-4 pt-4 border-t border-primary-foreground/10">
+            <p className="text-xs text-primary-foreground/50">
+              Developed By <a href="https://octaleads.com" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-medium">Octaleads Pvt Ltd.</a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

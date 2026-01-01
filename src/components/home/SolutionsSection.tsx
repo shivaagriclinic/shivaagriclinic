@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Zap, Shield, LineChart, CloudRain, Smartphone, Database } from "lucide-react";
+import { ArrowRight, Zap, Shield, LineChart, CloudRain, Users, Database } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import smartFarming from "@/assets/smart-farming.jpg";
 
 const features = [
-  { icon: Smartphone, label: "Mobile App Advisory" },
+  { icon: Users, label: "Expert Advisory" },
   { icon: Database, label: "Data-Driven Insights" },
   { icon: LineChart, label: "Yield Monitoring" },
   { icon: CloudRain, label: "Weather Alerts" },
