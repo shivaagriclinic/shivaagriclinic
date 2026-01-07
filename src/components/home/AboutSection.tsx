@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Youtube, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ScrollAnimation } from "@/components/ScrollAnimation";
 
 export const AboutSection = () => {
   return (
@@ -8,7 +9,7 @@ export const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div>
+          <ScrollAnimation animation="slide-right">
             <span className="text-accent font-semibold text-sm uppercase tracking-wider">
               About Shiva Agri Clinic
             </span>
@@ -41,26 +42,28 @@ export const AboutSection = () => {
                 </a>
               </Button>
             </div>
-          </div>
+          </ScrollAnimation>
 
           {/* Video Embed */}
-          <div className="relative">
-            <div className="aspect-video rounded-2xl overflow-hidden bg-primary shadow-2xl">
-              <div className="w-full h-full flex items-center justify-center">
-                <a
-                  href="https://www.youtube.com/@ShivaAgriClinic"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-20 h-20 rounded-full bg-accent flex items-center justify-center hover:scale-110 transition-transform shadow-glow"
-                >
-                  <Play className="w-8 h-8 text-accent-foreground fill-current ml-1" />
-                </a>
+          <ScrollAnimation animation="slide-left" delay={200}>
+            <div className="relative">
+              <div className="aspect-video rounded-2xl overflow-hidden bg-primary shadow-2xl">
+                <div className="w-full h-full flex items-center justify-center">
+                  <a
+                    href="https://www.youtube.com/@ShivaAgriClinic"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-20 h-20 rounded-full bg-accent flex items-center justify-center hover:scale-110 transition-transform shadow-glow"
+                  >
+                    <Play className="w-8 h-8 text-accent-foreground fill-current ml-1" />
+                  </a>
+                </div>
               </div>
+              {/* Decorative Elements */}
+              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent/20 rounded-2xl -z-10" />
+              <div className="absolute -top-4 -left-4 w-16 h-16 bg-primary/20 rounded-xl -z-10" />
             </div>
-            {/* Decorative Elements */}
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent/20 rounded-2xl -z-10" />
-            <div className="absolute -top-4 -left-4 w-16 h-16 bg-primary/20 rounded-xl -z-10" />
-          </div>
+          </ScrollAnimation>
         </div>
       </div>
     </section>
